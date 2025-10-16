@@ -19,16 +19,16 @@
     "waitlist",
     "wellness"
   ],
-  "author": "Your Name",
+  "author": "Peace Akov",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "html-minifier": "^4.0.0",
     "csso-cli": "^4.0.2",
-    "uglify-js": "^3.17.4",
+    "html-minifier": "^4.0.0",
     "html-validate": "^8.1.1",
     "http-server": "^14.1.1",
-    "lighthouse": "^11.0.0"
+    "lighthouse": "^13.0.0",
+    "live-server": "^1.2.0",
+    "uglify-js": "^3.17.4"
   },
   "engines": {
     "node": ">=18.0.0",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/lumina-waitlist"
+    "url": "https://github.com/Menslanista/lumina-waitlist"
   },
-  "homepage": "https://your-username.github.io/lumina-waitlist"
+  "homepage": "https://Menslanista.github.io/lumina-waitlist"
 }
