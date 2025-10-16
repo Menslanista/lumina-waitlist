@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Join the Waitlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+            font-family: inherit;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .feature-preview {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .feature-preview h3 {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .logo h1 {
+                font-size: 2em;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>LUMINA</h1>
+        </div>
+        
+        <p class="tagline">Join the spiritual awakening community. Be among the first to experience transformative connections.</p>
+        
+        <form id="waitlistForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="interest">Your Interest</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Select your role</option>
+                    <option value="User">Seeker/User</option>
+                    <option value="Creator">Guide/Creator</option>
+                    <option value="Partner">Community Partner</option>
+                    <option value="Investor">Investor</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="background">Your Background & Journey</label>
+                <textarea id="background" name="background" required placeholder="Briefly describe your spiritual background, practices, or what draws you to Lumina..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" placeholder="Any specific expectations or questions..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn pulse">Join the Waitlist</button>
+        </form>
+        
+        <div class="disclaimer">
+            By joining, you'll be among the first to access Lumina and help shape our community guidelines.
+        </div>
+        
+        <div class="feature-preview">
+            <h3>✨ Coming Soon ✨</h3>
+            <p>Aura Mapping • Guided Connections • Spiritual Marketplace • Community Sanctuary</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link
+            const subject = `Lumina Waitlist - ${data.interest}`;
+            const body = `Name: ${data.name}
+Interest: ${data.interest}
+Background: ${data.background}
+${data.message ? `Message: ${data.message}` : ''}
+
+Submitted via Lumina Waitlist Form`;
+
+            const mailtoLink = `mailto:info@synapticwars.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Optional: Show confirmation message
+            alert('Thank you! Your email client will open with a pre-filled message. Please send it to complete your waitlist registration.');
+        });
+    </script>
+</body>
+</html>
