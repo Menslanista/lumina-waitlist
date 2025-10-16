@@ -1,0 +1,42 @@
+{
+  "name": "lumina-waitlist",
+  "version": "1.0.0",
+  "description": "A spiritual awakening community platform waitlist",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --no-browser",
+    "build": "npm run optimize && npm run minify",
+    "optimize": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true index.html -o dist/index.html",
+    "minify": "csso style.css --output dist/style.css && uglify-js script.js --output dist/script.js",
+    "validate": "html-validate index.html",
+    "test": "npm run validate",
+    "serve": "http-server dist -p 8080 -o"
+  },
+  "keywords": [
+    "spiritual",
+    "awakening",
+    "community",
+    "waitlist",
+    "wellness"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "html-minifier": "^4.0.0",
+    "csso-cli": "^4.0.2",
+    "uglify-js": "^3.17.4",
+    "html-validate": "^8.1.1",
+    "http-server": "^14.1.1",
+    "lighthouse": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/lumina-waitlist"
+  },
+  "homepage": "https://your-username.github.io/lumina-waitlist"
+}
